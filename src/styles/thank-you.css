@@ -1,0 +1,121 @@
+
+/* Global Styles for .thank__you */
+.thank__you {
+    text-align: center;
+    padding: 50px 0;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Center the icon and animate it */
+  .thank__you span i {
+    font-size: 4rem;
+    color: #4caf50;
+    animation: bounce 1s ease infinite;
+  }
+  
+  /* Main Title Styling */
+  .thank__you h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    opacity: 0;
+    animation: slideUp 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Subtitle Styling */
+  .thank__you h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #666;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Button Styling */
+  .thank__you .btn {
+    position: relative;
+    background-color: #4caf50;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Link inside Button */
+  .thank__you .btn .text-decoration-none {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hover Effect for Button */
+  .thank__you .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover Effect on Icon */
+  .thank__you span i:hover {
+    transform: rotate(360deg);
+    color: #8bc34a;
+  }
+  
+  /* Animation for Fade-In Text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for Bouncing Icon */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Animation for Text Sliding Up */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for Fading Text */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .tank__you span i{
+    font-size: 4rem;
+    color: green;
+}
+
+.tank__you h1{
+    font-size: 3.6rem;
+    font-family: var(--subtitle-font-name);
+}

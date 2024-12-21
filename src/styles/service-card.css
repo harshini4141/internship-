@@ -1,0 +1,119 @@
+.service__item{
+    padding: 1rem;
+    border-bottom: 1px solid #faa83586;
+    border-right: 1px solid #faa83586;
+    border-radius: 0.5rem;
+}
+
+.service__img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 50px;
+}
+
+.service__img img{
+    width: 50%;
+}
+
+.service__item h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.service__item p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+/* service-card.css */
+
+/* Container for each service item */
+.service__item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Image styling */
+  .service__img {
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .service__img img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Title styling */
+  .service__item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Description styling */
+  .service__item p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 15px;
+    line-height: 1.5;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover effect for service card */
+  .service__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service__item:hover .service__img img {
+    transform: scale(1.1); /* Zoom effect on image */
+  }
+  
+  .service__item:hover h5 {
+    color: #007bff; /* Change title color on hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Enhanced text shadow */
+  }
+  
+  .service__item:hover p {
+    opacity: 1; /* Make description more visible on hover */
+  }
+  
+  /* Animation for service card */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .service__item {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  

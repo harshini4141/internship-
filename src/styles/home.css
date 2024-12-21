@@ -1,0 +1,224 @@
+.hero__subtitle img{
+  width: 2.3rem;
+  height: 2.2rem;
+}
+.hero__content h1{
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.hero__content h1 .highlight {
+  color: var(--secondary-color);
+}
+.hero__content p{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero__img-box img, .hero__img-box video{
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+  object-fit: cover;
+}
+.hero__content{
+  padding: 3.5rem;
+}
+.hero__img-box{
+  padding-top: 2rem;
+
+}
+
+.services__subtitle{
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #5560f3;
+  font-family: var(--subtitle-font-name);
+}
+.services__title{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.featured__tour-title{
+  font-size: 2.3rem;
+  font-weight: 500;
+
+}
+
+.experience__content h2{
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.experience__content p{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.counter__wrapper{
+  margin-top: 2.5rem;
+}
+
+.counter__box span{
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 10px 5px 10px 5px;
+}
+.counter__box h6{
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+  color: var(--text-color);
+}
+.gallery__title{
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+ .row{
+  transform: .3s;
+height: 100%;
+width: 100%;
+object-fit: cover;
+display: flex;
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+.row > .masonry__img{
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+ .masonry__img:hover{
+  transform: scale(1.1);
+}  
+.testimonial__title{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+
+.col-lo-12{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.hero__content {
+  /* background-image: url(div2.jpg);  */
+     background-position: center;
+    background-size: cover;
+    transition: width 0.5s ease;
+} 
+.hero__img-box{
+  width: 20%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+} 
+
+/* Animation for sliding */
+@keyframes slide-animation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-20%); }
+  50% { transform: translateX(-30%); }
+  75% { transform: translateX(-40%); }
+  100% { transform: translateX(0); }
+}  
+
+/* Apply the animation */
+.hero__img-box{
+    position: relative;
+    left: 0;
+    right: 0; 
+    width: 100%;
+    height:100%; 
+    background-position: center;
+    background-size: cover;
+    transition: width 1s ease; 
+  animation: slide-animation 5s infinite; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: #a89191; */
+  z-index: 200;
+  flex: 1;
+  cursor: pointer;
+} 
+  
+.hero__img-box:hover{
+  flex: 1;
+}
+
+.experience__countent{
+  text-shadow: white;
+ }
+ 
+ 
+.services__subtitle{
+  color: blue;
+  cursor: pointer;
+  text-shadow:  0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan;
+}
+.featured__tour-title{
+  color: blue;
+  cursor: pointer;
+  text-shadow:  0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan;
+}
+p{
+  font-family: oblique;
+}
+.experience__countent p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.masonry__img{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee span {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  animation: scroll 10s linear infinite;
+  color: blue;
+  background-color: rgb(167, 167, 247);
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

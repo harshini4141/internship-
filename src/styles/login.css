@@ -1,0 +1,201 @@
+  /* Heading styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  /* Container styling */
+  .container {
+    padding: 30px;
+  }
+  
+  /* Login container styling */
+  .login__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+.login__img{
+    width: 40%;
+    text-align: center;
+}
+
+.login__img img{
+    width: 70%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.login__form{
+    padding: 50px;
+    background: var(--secondary-color);
+    position: relative;
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__container{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.login__form .user{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -9%;
+    left: 40%;
+    transform: translate(-50% -9%);
+}
+
+.login__form .user img{
+    width: 100%;
+}
+
+.login__form h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login__form{
+    width: 40%;
+}
+
+.login__form input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: var(--heading-color);
+}
+
+.login__form input:focus{
+    outline:none;
+}
+
+.auth__btn{
+    background: var(--heading-color) !important;
+    width: 100%;
+    color: #fff !important;
+}
+
+.login__form p{
+    font-size: .9rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.login__form p a{
+    color: var(--heading-color);
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 500;
+}
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Glowing Text Effect for Button */
+button.secondary__btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: glowing 1.5s ease-in-out infinite;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #007bff, 0 0 20px #007bff, 0 0 25px #007bff, 0 0 30px #007bff, 0 0 35px #007bff;
+}
+
+button.secondary__btn:hover {
+  background-color: #0056b3;
+}
+/* Keyframes for glowing effect */
+@keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #007bff, 0 0 20px #007bff, 0 0 25px #007bff, 0 0 30px #007bff, 0 0 35px #007bff;
+    }
+    50% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #007bff, 0 0 20px #007bff, 0 0 25px #007bff, 0 0 30px #007bff, 0 0 35px #007bff;
+    }
+  }
+/* Footer text styling */
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .login__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .login__form {
+    width: 80%;
+  }
+}
+/* User icon styling */
+.user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  /* Heading styling */
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px white,
+                0px 0px 12px white,
+                0px opx 16px white;
+    color: #333;
+    font-size: 28px;
+  }
